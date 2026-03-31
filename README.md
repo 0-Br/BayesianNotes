@@ -1,23 +1,29 @@
 # BayesianNotes
 
-贝叶斯方法与自助采样笔记 | Notes on Bayesian Methods & Bootstrap — 清华大学《量子力学》课程笔记
+**贝叶斯方法与自助采样笔记**
+
+> 清华大学「量子力学」课程笔记
 
 ## 内容
 
-本笔记用 LaTeX 撰写，涵盖以下两个主题：
+本笔记系统整理了概率统计中两种重要方法的理论基础与数学描述。
 
-1. **贝叶斯方法（Bayesian Methods）** — 发展历史、数学描述（先验分布、后验分布、似然与贝叶斯公式）及核心理解
-2. **自助采样（Bootstrap Sample）** — 定义、数学描述及统计推断中的应用
+### 贝叶斯方法（Bayesian Methods）
+
+回顾贝叶斯理论的发展脉络——从 Bayes 与 Laplace 的早期工作到现代贝叶斯统计的成熟。阐述先验分布、似然函数与后验分布的数学关系，推导贝叶斯公式，并讨论贝叶斯推断的核心思想：将未知参数视为随机变量，通过观测数据更新信念。
+
+### 自助采样（Bootstrap）
+
+介绍 Efron 于 1979 年提出的 Bootstrap 方法：从已有样本中有放回地重采样，构造统计量的经验分布，从而在不依赖参数假设的前提下进行区间估计和假设检验。给出 Bootstrap 的数学定义、采样过程及其在统计推断中的典型应用。
 
 ## 文件结构
 
 ```
-.
-├── report.tex          # LaTeX 源文件
-├── report.pdf          # 编译后的 PDF
-└── assets/             # 插图
-    ├── Prior and Posterior Distribution.png
-    └── Bootstrap Sample.png
+├── report.tex                              LaTeX 源文件
+├── report.pdf                              编译后的 PDF
+└── assets/
+    ├── Prior and Posterior Distribution.png 先验与后验分布示意图
+    └── Bootstrap Sample.png                Bootstrap 采样示意图
 ```
 
 ## 编译
@@ -26,4 +32,4 @@
 xelatex report.tex
 ```
 
-需要安装 `ctex` 宏包以支持中文排版。
+需要 `ctex` 宏包以支持中文排版。

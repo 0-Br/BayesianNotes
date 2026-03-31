@@ -1,17 +1,28 @@
-# LaTeX auxiliary files
+# LaTeX 编译中间文件
 *.aux
+*.bbl
+*.bcf
+*.blg
+*.ent
+*.fdb_latexmk
+*.fls
 *.log
 *.out
-*.toc
+*.run.xml
 *.synctex.gz
-*.fls
-*.fdb_latexmk
-*.bbl
-*.blg
+*.synctex(busy)
+*.toc
+*.lof
+*.lot
+*.idx
+*.ilg
+*.ind
 *.nav
 *.snm
 *.vrb
+*.xdv
+*.spl
 
-# OS files
+# 系统
 .DS_Store
 Thumbs.db
